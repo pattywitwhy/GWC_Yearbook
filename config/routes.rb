@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  get 'api/users'
   # EXAMPLE HTML ROUTE
   # get "/photos" => "photos#index"
 
