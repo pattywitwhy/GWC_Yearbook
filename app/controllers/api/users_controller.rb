@@ -11,12 +11,11 @@ class Api::UsersController < ApplicationController
 
   def create
     user = User.new(
-                      name: params[:name],
+                      first_name: params[:first_name],
+                      last_name: params[:last_name],
                       email: params[:email],
                       password: params[:password],
                       password_confirmation: params[:password_confirmation],
-                      first_name: params[:first_name],
-                      last_name: params[:last_name],
                       birthday: params[:birthday],
                       age: params[:age],
                       school: params[:school],
